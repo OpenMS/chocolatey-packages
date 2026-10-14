@@ -1,0 +1,11 @@
+﻿$ErrorActionPreference = 'Stop';
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  url            = 'https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-windows-amd64.zip'
+  checksum       = '8a9db2bad1dc79a65b3348fd857069598e2aab7cf4d118b77b1df23055aff818'
+  checksumType   = 'sha256'
+  unzipLocation  = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+  softwareName   = 'rclone'
+}
+Install-ChocolateyZipPackage @packageArgs
