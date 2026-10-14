@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ccache</id>
+    <version>4.14.1</version>
+    <title>ccache</title>
+    <authors>Joel Rosdahl</authors>
+    <projectUrl>https://ccache.dev/</projectUrl>
+    <tags>development c c++ compiler cache tool</tags>
+    <summary>A fast compiler cache</summary>
+    <description>Ccache is a compiler cache. It speeds up recompilation by caching previous compilations and detecting when the same compilation is being done again.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

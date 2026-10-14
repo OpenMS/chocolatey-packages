@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rclone</id>
+    <version>1.75.2</version>
+    <title>rclone</title>
+    <authors>Nick Craig-Wood</authors>
+    <projectUrl>https://rclone.org/</projectUrl>
+    <tags>sync cloud storage tool</tags>
+    <summary>Sync files and directories to and from cloud storage</summary>
+    <description>Rclone is a command-line program to manage files on cloud storage, including SFTP, WebDAV and HTTP servers.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
