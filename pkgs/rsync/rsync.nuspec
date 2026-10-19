@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rsync</id>
+    <version>6.2.7</version>
+    <title>cwRsync (Free Edition)</title>
+    <authors>Itefix</authors>
+    <projectUrl>https://www.itefix.net/cwrsync</projectUrl>
+    <tags>rsync tool file copy cygwin itefix</tags>
+    <summary>Rsync 3.2.7 for Windows, with the Cygwin libraries it needs</summary>
+    <description>cwRsync is a minimal distribution of rsync for Windows, packaged with the Cygwin libraries it needs. Rsync is a fast file copying tool for local and remote files that transfers only the differences between them.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
