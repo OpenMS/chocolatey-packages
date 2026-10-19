@@ -14,7 +14,8 @@ $unzipArgs = @{
 Get-ChocolateyUnzip @unzipArgs
 
 # Put only rsync.exe on PATH: a shim for the bundled ssh.exe would shadow the
-# system's ssh.
+# system's ssh. The rsync-cache action of OpenMS/ci-tools runs this ssh.exe,
+# which it looks for under C:\ProgramData\chocolatey\lib\rsync\tools.
 Get-ChildItem $toolsDir -Include *.exe -Recurse |
   Where-Object { $_.Name -ne 'rsync.exe' } |
   ForEach-Object { New-Item "$($_.FullName).ignore" -Type File -Force | Out-Null }
