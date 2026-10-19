@@ -15,3 +15,4 @@ endef
 $(eval $(call PACKAGE,doxygen,1.14.0))
 $(eval $(call PACKAGE,ccache,4.14.1))
 $(eval $(call PACKAGE,rclone,1.75.2))
+$(eval $(call PACKAGE,rsync,6.2.7))

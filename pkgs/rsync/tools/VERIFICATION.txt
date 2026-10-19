@@ -1,0 +1,24 @@
+VERIFICATION
+
+cwrsync_6.2.7_x64_free.zip is cwRsync 6.2.7 Free Edition by Itefix (rsync
+3.2.7, Cygwin 3.3.5, OpenSSH 9.0p1, LibreSSL 3.5.3; see README.cwrsync.txt
+inside the archive). Itefix no longer serves this version
+(https://itefix.net/dl/free-software/cwrsync_6.2.7_x64_free.zip returns 404),
+so the archive is kept here. It was taken from the Chocolatey community
+package rsync 6.2.7 (https://community.chocolatey.org/packages/rsync/6.2.7),
+which embeds the archive Itefix published and lists its checksum in its
+legal/VERIFICATION.txt:
+
+  File:     cwrsync_6.2.7_x64_free.zip
+  Type:     sha256
+  Checksum: AB55D70CF84CA62BA010263B3E65B9927FF8D73A08769E3527ECFB5F37DD3811
+
+chocolateyinstall.ps1 checks this checksum before unpacking the archive.
+
+LICENSE.txt is Itefix's license for cwRsync, as shipped in the community
+package (from https://itefix.net/simplified-bsd-license). The programs and
+libraries in the archive keep their own licenses: rsync is distributed under
+the GNU General Public License version 3 (source:
+https://download.samba.org/pub/rsync/src/rsync-3.2.7.tar.gz), and the Cygwin
+DLLs and OpenSSH under theirs (sources: https://cygwin.com and
+https://www.openssh.com).
